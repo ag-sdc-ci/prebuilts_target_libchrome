@@ -1,0 +1,6 @@
+shadow prebuilt repo: libchrome (target)
+  upstream: hardware/libchrome
+  api-level: 34 (local ag-build rebuild 2026-10-11, branch 34-20261011)
+  blobs: org.blisslabs.ag.libchrome.apex org.blisslabs.ag.libchrome.dev.apex org.blisslabs.ag.libchrome.doc.apex 
+  dev-src: none
+  date: 2026-10-11
