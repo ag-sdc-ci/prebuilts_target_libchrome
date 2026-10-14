@@ -1,0 +1,18 @@
+{
+	"provideLibs": [	
+		    "libchrome-crypto-x86_64-v2.so",
+		    "libchrome-crypto.so",
+		    "libchrome-x86_64-v2.so",
+		    "libchrome.so",
+		    "libdummy_binary_libchrome.a-x86_64-v2.so",
+		    "libdummy_binary_libchrome.a.so",
+		    "libdummy_headers_libchrome-x86_64-v2.so",
+		    "libdummy_headers_libchrome.so",
+		    "libdummy_libchrome_dev-x86_64-v2.so",
+		    "libdummy_libchrome_dev.so"
+	],
+	"requireLibs": [	
+		    "libdummy-libchrome.so"
+	],
+	"visible": true
+}
