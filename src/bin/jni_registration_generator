@@ -1,0 +1,3 @@
+#!/bin/sh
+export PYTHONPATH="$PWD":$PYTHONPATH
+exec python3 "base/android/jni_generator/jni_registration_generator.py" "$@"
