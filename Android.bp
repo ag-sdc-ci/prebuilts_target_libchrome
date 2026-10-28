@@ -30,7 +30,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
 }
 
@@ -42,7 +42,7 @@ cc_prebuilt_library {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -51,10 +51,10 @@ cc_prebuilt_library {
     ],
     min_sdk_version: "29",
     shared: {
-        srcs: ["src/lib/libchrome.so"],
+        srcs: ["lib64/libchrome.so"],
     },
     static: {
-        srcs: ["dev-src/lib/libchrome.a"],
+        srcs: ["lib64/libchrome.a"],
     },
 }
 
@@ -66,7 +66,7 @@ cc_prebuilt_library_shared {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     prefer: true,
     apex_available: [
@@ -74,15 +74,15 @@ cc_prebuilt_library_shared {
         "//apex_available:platform",
     ],
     min_sdk_version: "29",
-    srcs: ["src/lib/libchrome-crypto.so"],
+    srcs: ["lib64/libchrome-crypto.so"],
 }
 
 sh_binary {
     name: "jni_generator",
-    src: "src/bin/jni_generator",
+    src: "bin/jni_generator",
 }
 
 sh_binary {
     name: "jni_registration_generator",
-    src: "src/bin/jni_registration_generator",
+    src: "bin/jni_registration_generator",
 }
